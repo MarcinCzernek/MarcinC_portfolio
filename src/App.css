@@ -1,38 +1,117 @@
-.App {
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+  background: rgb(0,45,114);
+  background: radial-gradient(circle, rgba(0,45,114,1) 0%, rgba(49,140,231,1) 100%);
+  font-family: 'Fira Code', sans-serif;
+  color: white;
+  padding: 10px 50px 100px;
+}
+.welcome{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frontend{
+  color:blue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about{
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.apps_links{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+  position: absolute;
+  right: 1650px;
+}
+.app{
+
+  display: grid;
+  grid-template-rows: 40px 30px  1fr;
+  grid-template-areas: "app_image app_header app_header"
+                         "app_image app_tech app_tech"
+                         "app_image app_desc app_desc"
+                         "app_image app_link_git app_link_live";
+  text-align: center;
+  /*padding: 20px 55px;*/
+  height: 250px;
+  width: 859px;
+  /*465*/
+  /*grid-gap: 1px;*/
+  /*background-color: rgba(50,200,300,0.2);*/
+  backdrop-filter: sepia(20%);
+  border: 3px groove rgba(50,200,300,0.3);
+}
+.apps_container {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+  margin: 50px 100px;
+  grid-gap: 130px ;
+}
+.app_img:hover{
+  /*width: 400px;
+  height: 350px*/;
+  -webkit-transform:scale(2.04);
+  -moz-transform:scale(2.04);
+  -ms-transform:scale(2.04);
+  transform:scale(2.04);
+}
+.app_img{
+  border: dodgerblue 2px groove;
+  grid-area: app_image;
+}
+.app_header:first-letter{
+  color: blue;
+  font-weight: bold;
+}
+.app_header{
+  grid-area: app_header;
+}
+.app_link_git,.app_link_live{
+  text-decoration: none;
+  border: 1px groove rgba(50,200,300,0.3);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app_link_live{
+}
+.app_link_git:hover,.app_link_live:hover{
+  background-color: rgba(50,200,300,0.6);
+  color: white;
+  text-decoration: none;
+}
+.app_link_git{
+  grid-area: app_link_git;
+}
+.app_link_live{
+  grid-area: app_link_live;
+}
+.app_desc{
+  grid-area: app_desc;
+}
+.app_tech{
+  grid-area: app_tech;
+  color: aqua;
+}
+.profile{
+  /*filter: blur(1px);*/
+  filter: brightness(50%);
+}
+.profile:hover{
+  /*width: 70px;*/
+  /*height: 70px;*/
+  filter: brightness(100%);
+}
+.langauges{
+  color: aqua;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
