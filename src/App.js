@@ -95,10 +95,10 @@ function App() {
         </div>
         <div className="app">
           <h2 className="app_header">Strona Traveler</h2>
-          <p className="app_desc">A template for website of random tourism company.</p>
+          <p className="app_desc">Szablon strony internetowej domyślnej firmy turystycznej</p>
           <p className="app_tech">React JS</p>
           <img className="app_img" src={Traveler} alt="example" width="300px" height="250px"/>
-            <a className="app_link_live" href="traveler-website.vercel.app">Podgląd</a>
+            <a className="app_link_live" href="https://traveler-website.vercel.app/">Podgląd</a>
             <a className="app_link_git" href="https://github.com/MarcinCzernek/traveler_website">Kod na Github</a>
         </div>
         <div className="app">
