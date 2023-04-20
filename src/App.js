@@ -68,9 +68,9 @@ function App() {
         </div>
 
         <div className="app">
-          <h2 className="app_header">Forum internetowe</h2>
+          <h2 className="app_header">Czat internetowy</h2>
           <p className="app_desc">Responsywna strona z formularzem logowania, rejestracji z możliwoscią dodawania
-            użytkowników. Mogą oni zamieszczać na forum komentarze które są filtrowane i nie zazwalają na używanie
+            użytkowników. Mogą oni zamieszczać na czacie komentarze które są filtrowane i nie zazwalają na używanie
             niedopowiednich słów.</p>
           <p className="app_tech">JavaScript PHP HTML CSS MySQL</p>
           <img className="app_img" src={Pak_register} alt="example" width="300px" height="250px"/>
