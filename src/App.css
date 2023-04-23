@@ -34,11 +34,12 @@ body{
 .app{
 
   display: grid;
-  grid-template-rows: 40px 30px  1fr;
+  grid-template-rows: 40px 20px 1fr;
   grid-template-areas: "app_image app_header app_header"
                          "app_image app_tech app_tech"
                          "app_image app_desc app_desc"
-                         "app_image app_link_git app_link_live";
+                         "app_image app_link_git app_link_git"
+                          "app_image app_link_live app_link_live";
   text-align: center;
   /*padding: 20px 55px;*/
   height: 250px;
@@ -81,6 +82,7 @@ body{
   text-decoration: none;
   border: 1px groove rgba(50,200,300,0.3);
   color: white;
+  padding: 2px;
 }
 .app_link_live{
 }

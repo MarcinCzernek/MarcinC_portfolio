@@ -22,7 +22,7 @@ function App() {
       <div className="about">
         <p>Języki programowania:<span className="langauges"> Java, HTML, CSS, JavaScript, PHP </span> Bazy danych: <span
             className="langauges">MySQL, SQLite</span></p>
-        <p>Biblioteki które znam: <span className="langauges">Bootstrap, SCSS, React JS </span> Inne narzędzia: <span
+        <p>Biblioteki które znam: <span className="langauges">Bootstrap, SCSS, React, Symfony </span> Inne narzędzia: <span
             className="langauges">Git</span></p>
       </div>
 
@@ -32,9 +32,9 @@ function App() {
           <h2 className="app_header">Pomodoro JS</h2>
           <p className="app_desc">Responsywna aplikacja webowa pomodoro odliczająca wybrany czas w minutach i sekundach.
             Możliwośc pauzy i kontynuacji odliczania. Po upłynięciu wyznaczonego czasu odtwarzany jest gong.</p>
-          <p className="app_tech">JavaScript HTML CSS</p>
+          <p className="app_tech">JavaScript HTML CSS Node</p>
           <img className="app_img" src={Pomodoro} alt="example" width="300px" height="250px"/>
-            <a className="app_link_live" href="#">Podgląd</a>
+          <a className="app_link_live" href="https://pomodoro-js-ten.vercel.app/">Podgląd</a>
             <a className="app_link_git" href="https://github.com/MarcinCzernek/pomodoro_js">Kod na Github</a>
         </div>
 
@@ -48,7 +48,7 @@ function App() {
             w odpowiedni sposób.</p>
           <p className="app_tech">PHP JavaScript HTML CSS Bootstrap MySQL</p>
           <img className="app_img" src={ShopSport} alt="example" width="300px" height="250px"/>
-            <a className="app_link_live" href="#">Podgląd</a>
+           
             <a className="app_link_git" href="https://github.com/MarcinCzernek/shopSport">Kod na Github</a>
         </div>
 
@@ -62,7 +62,7 @@ function App() {
           <p className="app_desc">Aplikacja webowa zaznacza na mapie dane miasto i wyświetla poziom zanieczyszczenia
             powietrza w jego strefie. Korzysta z bazy danych o zanieczyszczeniu powietrza - API OpenAQ</p>
           <p className="app_tech">JavaScript</p>
-          <a className="app_link_live" href="">Podgląd</a>
+        
           <a className="app_link_git" href="https://github.com/MarcinCzernek/Leaflet_javascript_lab3">Kod na Github</a>
           <img className="app_img" src={Leaftlet} alt="example" width="300px" height="250px"/>
         </div>
@@ -74,7 +74,7 @@ function App() {
             niedopowiednich słów.</p>
           <p className="app_tech">JavaScript PHP HTML CSS MySQL</p>
           <img className="app_img" src={Pak_register} alt="example" width="300px" height="250px"/>
-            <a className="app_link_live" href="">Podgląd</a>
+            
             <a className="app_link_git" href="https://github.com/MarcinCzernek/PAK-project">Kod na Github</a>
         </div>
         <div className="app">
@@ -107,7 +107,7 @@ function App() {
             angielskiego ze słuchu.</p>
           <p className="app_tech">Java SQLite Android</p>
           <img className="app_img" src={Easy_eng} alt="example" width="300px" height="250px"/>
-            <a className="app_link_live" href="">Podgląd</a>
+            
             <a className="app_link_git" href="https://github.com/MarcinCzernek/LearnEnglishApp">Kod na Github</a>
         </div>
 
