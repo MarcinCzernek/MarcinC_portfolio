@@ -11,6 +11,7 @@ body{
   font-family: 'Fira Code', sans-serif;
   color: white;
   padding: 10px 50px 100px;
+  min-width: 950px;
 }
 .welcome{
   text-align: center;
@@ -25,11 +26,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 10px;
-  margin-top: 100px;
-  position: absolute;
-  right: 1650px;
+  position: relative;
+
 }
 .app{
 
@@ -58,6 +57,8 @@ body{
   grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
   margin: 50px 100px;
   grid-gap: 130px ;
+  margin-bottom: 200px;
+
 }
 .app_img:hover{
   /*width: 400px;
@@ -116,8 +117,8 @@ body{
 .langauges{
   color: aqua;
 }
-
 /*
+
 @media screen and (max-width: 700px){
   .apps_links{
     display: flex;
@@ -137,5 +138,18 @@ display: flex;
   margin-top: 100px;
   position: absolute;
   right: 1650px;
+
+
+.apps_links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+  position: absolute;
+  right: 1650px;
+}
+
 
 */

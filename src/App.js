@@ -12,6 +12,7 @@ import Pomodoro from './images/pomodoro.jpg';
 import ShopSport from './images/shopsport.jpg'
 import Traveler from './images/traveler.jpg'
 
+//Main app component
 function App() {
   return (
     <div className="App">
@@ -52,10 +53,9 @@ function App() {
             <a className="app_link_git" href="https://github.com/MarcinCzernek/shopSport">Kod na Github</a>
         </div>
 
-        <div className="apps_links">
-          <a href="https://github.com/MarcinCzernek/" target="_blank"><img className="profile" src={GitKot} alt="" width="50px" height="50px"/></a><br/>
-          <a href="mailto:marcinczernek12@gmail.com" target="_blank"><img className="profile" src={Mail} alt="" width="50px" height="50px"/></a>
-        </div>
+         
+       
+       
 
         <div className="app">
           <h2 className="app_header">OpenAQ map</h2>
@@ -112,6 +112,12 @@ function App() {
         </div>
 
       </div>
+
+      <div className="apps_links">
+          <a href="https://github.com/MarcinCzernek/" target="_blank"><img className="profile" src={GitKot} alt="" width="50px" height="50px"/></a><br/>
+          <a href="mailto:marcinczernek12@gmail.com" target="_blank"><img className="profile" src={Mail} alt="" width="50px" height="50px"/></a>
+        </div>
+
     </div>
   );
 }
