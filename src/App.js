@@ -16,13 +16,13 @@ function App() {
   return (
     <div className="App">
       <div className="welcome">
-        <h1>Marcin Czernek - <span className="frontend" > Frontend developer </span></h1>
+        <h1>Marcin Czernek - <span className="frontend" > Website developer </span></h1>
       </div>
 
       <div className="about">
-        <p>Języki programowania:<span className="langauges"> Java, HTML, CSS, JavaScript, PHP </span> Bazy danych: <span
+        <p>Języki programowania:<span className="langauges"> HTML, CSS, JavaScript, PHP, Java </span> Bazy danych: <span
             className="langauges">MySQL, SQLite</span></p>
-        <p>Biblioteki które znam: <span className="langauges">Bootstrap, SCSS, React, Symfony </span> Inne narzędzia: <span
+        <p>Biblioteki które znam: <span className="langauges">Bootstrap, SCSS, React </span> Inne narzędzia: <span
             className="langauges">Git</span></p>
       </div>
 
@@ -103,7 +103,7 @@ function App() {
         </div>
         <div className="app">
           <h2 className="app_header">Aplikacja mobilna EasyEnglish</h2>
-          <p className="app_desc">Napisana pod system Android pomaga w skuteczenej i efektywnej nauce języka
+          <p className="app_desc">Napisana pod system Android pomaga w skutecznej i efektywnej nauce języka
             angielskiego ze słuchu.</p>
           <p className="app_tech">Java SQLite Android</p>
           <img className="app_img" src={Easy_eng} alt="example" width="300px" height="250px"/>
