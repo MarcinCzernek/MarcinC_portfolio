@@ -53,23 +53,25 @@ background: linear-gradient(90deg, rgba(9,0,163,1) 0%, rgba(0,26,255,1) 35%, rgb
 
 }
 .app{
-
   display: grid;
   grid-template-rows: 40px 20px 1fr;
   grid-template-areas: "app_image app_header app_header"
                          "app_image app_tech app_tech"
                          "app_image app_desc app_desc"
                          "app_image app_link_git app_link_git"
-                          "app_image app_link_live app_link_live";
+                          "app_image app_link_live app_link_live"
+                          ;
   text-align: center;
+  grid-template-columns: auto;
   /*padding: 20px 55px;*/
-  height: 250px;
+  height: auto;
   width: 859px;
   /*465*/
   /*grid-gap: 1px;*/
   /*background-color: rgba(50,200,300,0.2);*/
   backdrop-filter: sepia(20%);
   border: 3px groove rgba(50,200,300,0.3);
+  
 }
 .apps_container {
   position: relative;

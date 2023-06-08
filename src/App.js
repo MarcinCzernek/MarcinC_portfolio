@@ -93,7 +93,7 @@ poziom jego zanieczyszczenia. Mapa świata zostaje wyśrodkowana na jego lokaliz
         </div>
         <div className="app">
           <h2 className="app_header">Info-tech</h2>
-          <p className="app_desc">Przykład strony internetowej o biało-niebieskim motywie zbudowanej w React, przeznaczony dla biznesów powiązanych z IT lub technologią. </p>
+          <p className="app_desc">Przykład strony internetowej o biało-niebieskim motywie zbudowanej w React, przeznaczony dla firm powiązanych z IT lub technologią. </p>
           <p className="app_tech">React JS</p>
           <img className="app_img" src={Info_tech} alt="example" width="300px" height="250px"/>
             <a className="app_link_live" href="https://info-tech-website.vercel.app/">Podgląd</a>
@@ -110,7 +110,9 @@ poziom jego zanieczyszczenia. Mapa świata zostaje wyśrodkowana na jego lokaliz
         <div className="app">
           <h2 className="app_header">Aplikacja mobilna EasyEnglish</h2>
           <p className="app_desc">Napisana pod system Android pomaga w skutecznej i efektywnej nauce języka
-            angielskiego ze słuchu.</p>
+            angielskiego ze słuchu. Realizuje to za pomocą czterech głównych funkcjonalności: <br></br><b>Rejestrator dźwięku</b> - za jego pomocą można nagrywać i zapisywać do plików wav dźwięk, wychodzący z urządzenia mobilnego.<br></br>
+            <b>Odtwarzacz audio</b> - odtwarzanie nagranych plików audio, lub pochodzących z innych źródeł.<br></br> <b>Możliwość powtórki w odtwarzaczu</b> - zapętlenia odtwarzanego materiału audio, lub wyznaczenia- za pomocą widżetu „Range seekbar” - jego początku i końca.<br></br> <b>Przypomnienia </b> - menu z fiszkami, składające się z listy, oraz - z dwóch przycisków. Jeden przycisk odpowiada za usunięcie wszystkich fiszek a drugi - za utworzenie nowej fiszki.
+</p>
           <p className="app_tech">Java SQLite Android</p>
           <img className="app_img" src={Easy_eng} alt="example" width="300px" height="250px"/>
             
