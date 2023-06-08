@@ -5,19 +5,41 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-body{
-  background: rgb(0,45,114);
-  background: radial-gradient(circle, rgba(0,45,114,1) 0%, rgba(49,140,231,1) 100%);
+[lighting='day']{
+  --bg-color: white;
+  --heading-color:#00001a;
+  --text-color:#00001a;
+  --link-color:blue;
+  --btn-color:rgb(6, 0, 121);
+  --bg-linear:radial-gradient(circle, rgba(0,45,114,1) 0%, rgba(49,140,231,1) 100%);
+}
+[lighting='night']{
+    --bg-color: #00001a;
+   --heading-color:white;
+  --text-color:white;
+  --link-color:aqua;
+  --btn-color:rgba(49,140,231,1);
+  --bg-linear:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,59,1) 35%, rgba(0,0,20,1) 100%);
+}
+.App{
+ 
+  background: var(--bg-linear);
   font-family: 'Fira Code', sans-serif;
   color: white;
   padding: 10px 50px 100px;
-  min-width: 950px;
+  min-width: 1050px;
 }
 .welcome{
   text-align: center;
+  
 }
 .frontend{
-  color:blue;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(9,0,163,1) 0%, rgba(0,26,255,1) 35%, rgba(0,212,255,1) 100%);
+   background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+  
 }
 .about{
   text-align: center;
@@ -116,6 +138,17 @@ body{
 }
 .langauges{
   color: aqua;
+}
+#setColor{
+  position: absolute;
+  background-color: var(--btn-color);
+  height: 40px;
+  width: 40px;
+  top: 50px;
+  right:50px;
+  border: groove 1px;
+  border-radius: 6px;
+  cursor:pointer;
 }
 /*
 

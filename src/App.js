@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import './App.css';
 
 import Cafe from './images/cafe.jpg';
@@ -14,8 +15,13 @@ import Traveler from './images/traveler.jpg'
 
 //Main app component
 function App() {
+
+  const [lighting, setLighting] = useState('day');
+
+  const toogleLighting = () => {setLighting(lighting === 'day' ? 'night' : 'day')};
+
   return (
-    <div className="App">
+    <div className="App" lighting={lighting}>
       <div className="welcome">
         <h1>Marcin Czernek - <span className="frontend" > Website developer </span></h1>
       </div>
@@ -31,8 +37,7 @@ function App() {
 
         <div className="app">
           <h2 className="app_header">Pomodoro JS</h2>
-          <p className="app_desc">Responsywna aplikacja webowa pomodoro odliczająca wybrany czas w minutach i sekundach.
-            Możliwośc pauzy i kontynuacji odliczania. Po upłynięciu wyznaczonego czasu odtwarzany jest gong.</p>
+          <p className="app_desc">Aplikacja pomodoro napisana w vanilla Javascript. Dzięki funkcji setInterval wykonywane jest odliczanie w sekundach czas trwania pomodoro. Gdy ustalony czas dobiegnie końca odtwarzany wtedy jest gong. Posiada czytelny i przejrzysty interfejs który dopasowuje się do ekranu urządzenia użytkownika</p>
           <p className="app_tech">JavaScript HTML CSS Node</p>
           <img className="app_img" src={Pomodoro} alt="example" width="300px" height="250px"/>
           <a className="app_link_live" href="https://pomodoro-js-ten.vercel.app/">Podgląd</a>
@@ -41,12 +46,12 @@ function App() {
 
         <div className="app">
           <h2 className="app_header">Shop Sport</h2>
-          <p className="app_desc">Internetowy sklep w którym użytkownicy mogą zarejestrować i zalogować się do systemu
+          <p className="app_desc">Internetowy sklep ze sprzętem sportowym w którym użytkownicy mogą zarejestrować i zalogować się do systemu
             aby móc dodawać produkty sportowe do koszyka, a także usuwać je zgodnie z ich życzeniem.
             Ponadto, mogą oni potwierdzić zamówienie do dalszego procesu.
             Mogą także w ustawieniach konta zmienić hasło swojego konta lub całkowcie usunać swoje konto.
             Projekt umożliwia administratorowi sklepu/inwentaryzacji wygodne prowadzenie ewidencji produktów i zamówień
-            w odpowiedni sposób.</p>
+            w odpowiedni sposób. Użytkownicy - ich loginy, hasła oraz wybrane produkty są przechowywane w bazie danych MySQL</p>
           <p className="app_tech">PHP JavaScript HTML CSS Bootstrap MySQL</p>
           <img className="app_img" src={ShopSport} alt="example" width="300px" height="250px"/>
            
@@ -59,8 +64,10 @@ function App() {
 
         <div className="app">
           <h2 className="app_header">OpenAQ map</h2>
-          <p className="app_desc">Aplikacja webowa zaznacza na mapie dane miasto i wyświetla poziom zanieczyszczenia
-            powietrza w jego strefie. Korzysta z bazy danych o zanieczyszczeniu powietrza - API OpenAQ</p>
+          <p className="app_desc">Aplikacja webowa przy pomocy której można sprawdzić poziom zanieczyszczenia powietrza dowolnego miasta na świecie.
+           Po wpisaniu nazwy miasta i Po naciśnięciu przycisku zostanie aktywowana funkcja getData która, jeśli otrzyma prawidłową
+wartość, pobierze w pętli z Api OpenAQ 3 wartości: city, country i count - wartość określającą poziom zanieczyszczenia powietrza. Stworzyłem obiekt mapy, z warstwą oraz zmienną query_addr do której trafia nazwa wyszukanego miasta, która następnie zostanie wyszukana w OS. Marker wyświetla nazwę miasta oraz
+poziom jego zanieczyszczenia. Mapa świata zostaje wyśrodkowana na jego lokalizacji. Aplikacja korzysta z odczytu API o zanieczyszczeniu powietrza - API OpenAQ</p>
           <p className="app_tech">JavaScript</p>
         
           <a className="app_link_git" href="https://github.com/MarcinCzernek/Leaflet_javascript_lab3">Kod na Github</a>
@@ -69,33 +76,32 @@ function App() {
 
         <div className="app">
           <h2 className="app_header">Czat internetowy</h2>
-          <p className="app_desc">Responsywna strona z formularzem logowania, rejestracji z możliwoscią dodawania
-            użytkowników. Mogą oni zamieszczać na czacie komentarze które są filtrowane i nie zazwalają na używanie
-            niedopowiednich słów.</p>
+          <p className="app_desc">Wymaga zarejestrowania użytkownika i zalogowania. Mogą oni zamieszczać na czacie komentarze które są filtrowane i nie zazwalają na używanie
+            wybranych niedopowiednich słów. Użytkownicy i ich komentarze są przechowywane w bazie danych MySQl. Mechanizm cenzury został napisany w języku PHP.</p>
           <p className="app_tech">JavaScript PHP HTML CSS MySQL</p>
           <img className="app_img" src={Pak_register} alt="example" width="300px" height="250px"/>
             
             <a className="app_link_git" href="https://github.com/MarcinCzernek/PAK-project">Kod na Github</a>
         </div>
         <div className="app">
-          <h2 className="app_header">Strona kawiarni</h2>
-          <p className="app_desc">Strona dla kawiarni stworzona w React JS z animacjami.</p>
+          <h2 className="app_header">Kawiarnia</h2>
+          <p className="app_desc">Klimatyczna strona internetowa dla wykwintnej kawiarni utrzymana w złotej kolorystyce z dużą ilością zdjęć. Jest responsywna a więc pasuje do przeglądania na każdym urządzeniu. Napisana w React.</p>
           <p className="app_tech">React JS</p>
           <img className="app_img" src={Cafe} alt="example" width="300px" height="250px"/>
             <a className="app_link_live" href="https://cafe-page.vercel.app/">Podgląd</a>
             <a className="app_link_git" href="https://github.com/MarcinCzernek/cafe_page">Kod na Github</a>
         </div>
         <div className="app">
-          <h2 className="app_header">Strona info_tech</h2>
-          <p className="app_desc">Responsywna strona template dla usług informatycznych stworzona w React.</p>
+          <h2 className="app_header">Info-tech</h2>
+          <p className="app_desc">Przykład strony internetowej o biało-niebieskim motywie zbudowanej w React, przeznaczony dla biznesów powiązanych z IT lub technologią. </p>
           <p className="app_tech">React JS</p>
           <img className="app_img" src={Info_tech} alt="example" width="300px" height="250px"/>
             <a className="app_link_live" href="https://info-tech-website.vercel.app/">Podgląd</a>
             <a className="app_link_git" href="https://github.com/MarcinCzernek/info_tech_website">Kod na Github</a>
         </div>
         <div className="app">
-          <h2 className="app_header">Strona Traveler</h2>
-          <p className="app_desc">Szablon strony internetowej domyślnej firmy turystycznej</p>
+          <h2 className="app_header">Traveler</h2>
+          <p className="app_desc">Szablon strony internetowej dla branży turystycznej oferującej podróze po świecie.</p>
           <p className="app_tech">React JS</p>
           <img className="app_img" src={Traveler} alt="example" width="300px" height="250px"/>
             <a className="app_link_live" href="https://traveler-website.vercel.app/">Podgląd</a>
@@ -116,7 +122,10 @@ function App() {
       <div className="apps_links">
           <a href="https://github.com/MarcinCzernek/" target="_blank"><img className="profile" src={GitKot} alt="" width="50px" height="50px"/></a><br/>
           <a href="mailto:marcinczernek12@gmail.com" target="_blank"><img className="profile" src={Mail} alt="" width="50px" height="50px"/></a>
+          <button id="setColor" onClick={toogleLighting}></button>
         </div>
+
+        
 
     </div>
   );
