@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App" lighting={lighting}>
       <div className="welcome">
-        <h1>Marcin Czernek - <span className="frontend" > Website developer </span></h1>
+        <h1>Marcin - <span className="frontend" > Website developer </span></h1>
       </div>
 
       <div className="about">

@@ -11,14 +11,15 @@
   --text-color:#00001a;
   --link-color:blue;
   --btn-color:rgb(6, 0, 121);
-  --bg-linear:radial-gradient(circle, rgba(0,45,114,1) 0%, rgba(49,140,231,1) 100%);
+  --bg-linear:-webkit-radial-gradient(#205983, #0A2742);
+  --bg-linear:radial-gradient(#205983, #0A2742);
 }
 [lighting='night']{
     --bg-color: #00001a;
    --heading-color:white;
   --text-color:white;
   --link-color:aqua;
-  --btn-color:rgba(49,140,231,1);
+  --btn-color:rgb(19, 87, 138);
   --bg-linear:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,59,1) 35%, rgba(0,0,20,1) 100%);
 }
 .App{
@@ -35,7 +36,7 @@
 }
 .frontend{
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(9,0,163,1) 0%, rgba(0,26,255,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(141deg, rgba(133,132,311,1)0%,rgba(133,132,711,1)29%,rgba(244,231,645,1)30%,rgba(765,324,532,1)51%,rgba(132,224,532,1)84%);
    background-clip: text;
     -webkit-background-clip: text;
     color:transparent;
@@ -97,7 +98,9 @@ background: linear-gradient(90deg, rgba(9,0,163,1) 0%, rgba(0,26,255,1) 35%, rgb
   grid-area: app_image;
 }
 .app_header:first-letter{
-  color: blue;
+  color: rgb(0, 119, 255);
+  font-size: 29px;
+  text-shadow: 1px 2px 0px white;
   font-weight: bold;
 }
 .app_header{
@@ -127,7 +130,8 @@ background: linear-gradient(90deg, rgba(9,0,163,1) 0%, rgba(0,26,255,1) 35%, rgb
 }
 .app_tech{
   grid-area: app_tech;
-  color: aqua;
+ color: aqua ;
+ 
 }
 .profile{
   /*filter: blur(1px);*/
