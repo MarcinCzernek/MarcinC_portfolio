@@ -23,7 +23,6 @@
   --bg-linear:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,59,1) 35%, rgba(0,0,20,1) 100%);
 }
 .App{
- 
   background: var(--bg-linear);
   font-family: 'Fira Code', sans-serif;
   color: white;
@@ -32,7 +31,6 @@
 }
 .welcome{
   text-align: center;
-  
 }
 .frontend{
   background: rgb(2,0,36);
@@ -98,7 +96,7 @@
   grid-area: app_image;
 }
 .app_header:first-letter{
-  color: rgb(0, 119, 255);
+  color: rgb(138, 138, 138);
   font-size: 29px;
   text-shadow: 1px 2px 0px white;
   font-weight: bold;
@@ -156,39 +154,59 @@
   border-radius: 6px;
   cursor:pointer;
 }
-/*
 
-@media screen and (max-width: 700px){
-  .apps_links{
+
+@media screen and (max-width: 1200px){
+  .apps_container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 100px; /**/
+    margin: 0px 0px;
   }
+  .app{
+
+    display: grid;
+    grid-template-areas: 
+                           "app_header"
+                           "app_tech"
+                           "app_desc"
+                           "app_image"
+                            "app_link_git"
+                            "app_link_live"
+                            ;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: auto;
+    height: auto;
+    width: auto;
+    margin-bottom: 50px;
+    backdrop-filter: sepia(20%);
+    border: 3px groove rgba(50,200,300,0.3);
+  }
+  .app_img{
+justify-self: center;
+
+  }
+  .app_img:hover{
+    /*width: 400px;
+    height: 350px;*/
+    -webkit-transform:scale(1.09);
+    -moz-transform:scale(1.09);
+    -ms-transform:scale(1.09);
+    transform:scale(1.09);
+  }
+  .App{
+    padding: 20px 44px  44px 44px ;
+    min-width: 0px ;
+    min-height: auto;
 }
-
-display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 100px;
-  position: absolute;
-  right: 1650px;
-
-
-.apps_links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 100px;
-  position: absolute;
-  right: 1650px;
+.welcome{
+  margin-bottom: 10px;
 }
-
-
-*/
+.about{
+  margin-bottom: 40px;
+}
+}

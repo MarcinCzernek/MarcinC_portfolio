@@ -101,7 +101,7 @@ poziom jego zanieczyszczenia. Mapa świata zostaje wyśrodkowana na jego lokaliz
         </div>
         <div className="app">
           <h2 className="app_header">Traveler</h2>
-          <p className="app_desc">Szablon strony internetowej dla branży turystycznej oferującej podróze po świecie.</p>
+          <p className="app_desc">Szablon strony internetowej dla branży turystycznej oferującej podróże po świecie.</p>
           <p className="app_tech">React JS</p>
           <img className="app_img" src={Traveler} alt="example" width="300px" height="250px"/>
             <a className="app_link_live" href="https://traveler-website.vercel.app/">Podgląd</a>
