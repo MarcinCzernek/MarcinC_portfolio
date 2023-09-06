@@ -155,8 +155,100 @@
   cursor:pointer;
 }
 
+@media screen and (max-width: 1900px) {
+  .apps_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    
+    margin: 0px 0px;
+  }
+  .app{
+  display: grid;
+  grid-template-rows: 40px 20px 1fr;
+  grid-template-areas: "app_image app_header app_header"
+                         "app_image app_tech app_tech"
+                         "app_image app_desc app_desc"
+                         "app_image app_link_git app_link_git"
+                          "app_image app_link_live app_link_live"
+                          ;
+  text-align: center;
+  grid-template-columns: auto;
+  /*padding: 20px 55px;*/
+  height: auto;
+  width: a;
+  /*465*/
+  /*grid-gap: 1px;*/
+  /*background-color: rgba(50,200,300,0.2);*/
+  backdrop-filter: sepia(20%);
+  border: 3px groove rgba(50,200,300,0.3);
+  
+}
+.apps_links{
+  margin-top: 100px;
+}
+}
 
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1000px){
+  .apps_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 100px; /**/
+    margin: 0px 0px;
+  }
+  .app{
+
+    display: grid;
+    grid-template-areas: 
+                           "app_header"
+                           "app_tech"
+                           "app_desc"
+                           "app_image"
+                            "app_link_git"
+                            "app_link_live"
+                            ;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: auto;
+    height: auto;
+    width: 500px;
+    margin-bottom: 50px;
+    backdrop-filter: sepia(20%);
+    border: 3px groove rgba(50,200,300,0.3);
+  }
+  .app_img{
+justify-self: center;
+
+  }
+  .app_img:hover{
+    /*width: 400px;
+    height: 350px;*/
+    -webkit-transform:scale(2.09);
+    -moz-transform:scale(2.09);
+    -ms-transform:scale(2.09);
+    transform:scale(2.09);
+  }
+  .App{
+    padding: 20px 44px  44px 44px ;
+    min-width: 0px ;
+    min-height: auto;
+}
+.welcome{
+  margin-bottom: 10px;
+}
+.about{
+  margin-bottom: 40px;
+}
+}
+
+
+@media screen and (max-width: 600px){
   .apps_container{
     display: flex;
     justify-content: center;
@@ -193,10 +285,10 @@ justify-self: center;
   .app_img:hover{
     /*width: 400px;
     height: 350px;*/
-    -webkit-transform:scale(1.09);
-    -moz-transform:scale(1.09);
-    -ms-transform:scale(1.09);
-    transform:scale(1.09);
+    -webkit-transform:scale(1.60);
+    -moz-transform:scale(1.60);
+    -ms-transform:scale(1.60);
+    transform:scale(1.60);
   }
   .App{
     padding: 20px 44px  44px 44px ;
